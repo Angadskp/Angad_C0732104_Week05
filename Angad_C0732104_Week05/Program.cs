@@ -18,4 +18,9 @@ namespace Angad_C0732104_Week05
         string FloorNumber;
 
     }
+
+    class Elevator
+    {
+
+    }
 }
