@@ -6,7 +6,8 @@ namespace Angad_C0732104_Week05
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            Elevator e = new Elevator();
+            e.run();
         }
     }
 
