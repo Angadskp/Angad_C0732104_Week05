@@ -15,9 +15,14 @@ namespace Angad_C0732104_Week05
     class Node
     {
         public Node() { }
-        public Node floor;
+       
         public Node elevatorUP;
         public string FloorNumber;
+
+    }
+    class Department
+    {
+        public Department aDepartment;
 
     }
 
