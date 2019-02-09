@@ -22,8 +22,22 @@ namespace Angad_C0732104_Week05
     }
     class Department
     {
+        public Department(string dept_name)
+        {
+            DepartmentDescription = dept_name;
+        }
         public Department aDepartment;
+        public string DepartmentDescription;
 
+    }
+    class DepartmentStore
+    {
+        public void initializedepartments()
+        {
+            Department Kitchenware = new Department("Kichtenware");
+            Department Books = new Department("Books");
+
+        }
     }
 
     class Elevator
