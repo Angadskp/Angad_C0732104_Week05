@@ -7,7 +7,8 @@ namespace Angad_C0732104_Week05
         static void Main(string[] args)
         {
             Elevator e = new Elevator();
-            e.run();
+            e.setup();
+            e.traverseList();
         }
     }
 
@@ -22,12 +23,13 @@ namespace Angad_C0732104_Week05
 
     class Elevator
     {
+        Node Head;
         Node FirstFloor;
         Node SecondFloor;
         Node ThirdFloor;
         Node FourthFloor;
 
-        public void run()
+        public void setup()
         {
             FirstFloor = new Node();
             SecondFloor = new Node();
@@ -48,6 +50,19 @@ namespace Angad_C0732104_Week05
             FourthFloor.elevatorUP = null;
 
 
+        }
+
+        public void traverseList()
+        {
+            Node temp;
+            temp = Head;
+            
+            while (temp != null) 
+            {
+                Console.WriteLine(temp.FloorNumber);
+                temp = Head.elevatorUP;
+               
+            }
         }
     }
 }
