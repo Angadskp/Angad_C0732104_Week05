@@ -26,7 +26,8 @@ namespace Angad_C0732104_Week05
         {
             DepartmentDescription = dept_name;
         }
-        public Department aDepartment;
+        public Department nextDepartment;
+        public Department previousDepartment;
         public string DepartmentDescription;
 
     }
@@ -34,7 +35,10 @@ namespace Angad_C0732104_Week05
     {
         public void initializedepartments()
         {
+            Department Books = new Department("Books");
             Department Kitchenware = new Department("Kichtenware");
+            Kitchenware.nextDepartment = Books;
+            Kitchenware.previousDepartment = FirstFloor;
             Department Books = new Department("Books");
 
         }
@@ -42,11 +46,11 @@ namespace Angad_C0732104_Week05
 
     class Elevator
     {
-        Node Head;
-        Node FirstFloor;
-        Node SecondFloor;
-        Node ThirdFloor;
-        Node FourthFloor;
+        public Node Head;
+        public Node FirstFloor;
+        public Node SecondFloor;
+        public Node ThirdFloor;
+        public Node FourthFloor;
 
         public void setup()
         {
